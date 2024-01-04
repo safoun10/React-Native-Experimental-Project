@@ -64,6 +64,10 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
+      <View>
+        <Text style={styles.title}>Hello !</Text>
+      </View>
+
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
@@ -116,6 +120,18 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  title: {
+    // paddingHorizontal: 50,
+    // paddingVertical: 50,
+    padding: 50,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: 50,
+    fontWeight: '700',
+    color: '',
+    textAlign: 'center',
   },
 });
 
